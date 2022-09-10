@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/checkBoxone"
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDiemSo" />
+
+    <CheckBox
+        android:id="@+id/checkBoxthree"
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxtwo" />
+
+    <CheckBox
+        android:id="@+id/checkBoxtwo"
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxone" />
+
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:id="@+id/seekBarone"
+        android:layout_width="575dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="116dp"
+        android:thumb="@drawable/oneremovebgpreview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:id="@+id/seekBartwo"
+        android:layout_width="575dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:thumb="@drawable/tworemovebgpreview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxtwo"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarone" />
+
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:id="@+id/seekBarthree"
+        android:layout_width="575dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:thumb="@drawable/threeremovebgpreview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxthree"
+        app:layout_constraintTop_toBottomOf="@+id/seekBartwo" />
+
+    <TextView
+        android:id="@+id/textViewDiemSo"
+        android:layout_width="66dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:text="100"
+        android:textAlignment="center"
+        android:textColor="#FF0303"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/playone" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="419dp"
+        android:layout_height="325dp"
+        android:layout_marginBottom="164dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/anhremovebgpreview" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="224dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Phạm Văn Đạt-2050531200130"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
